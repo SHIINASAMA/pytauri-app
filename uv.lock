@@ -4,7 +4,7 @@ requires-python = ">=3.9"
 
 [manifest]
 members = [
-    "example-pytauri-app-react",
+    "backend",
     "workspace",
 ]
 
@@ -33,7 +33,7 @@ wheels = [
 ]
 
 [[package]]
-name = "example-pytauri-app-react"
+name = "backend"
 version = "0.1.0"
 source = { editable = "src-tauri" }
 dependencies = [
@@ -372,13 +372,13 @@ source = { virtual = "." }
 
 [package.dev-dependencies]
 dev = [
-    { name = "example-pytauri-app-react" },
+    { name = "backend" },
 ]
 
 [package.metadata]
 
 [package.metadata.requires-dev]
-dev = [{ name = "example-pytauri-app-react", editable = "src-tauri" }]
+dev = [{ name = "backend", editable = "src-tauri" }]
 
 [[package]]
 name = "zipp"

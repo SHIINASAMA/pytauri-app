@@ -1,5 +1,5 @@
 [project]
-name = "example-pytauri-app-react"
+name = "backend"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.entry-points.pytauri]
-ext_mod = "example_pytauri_app_react.ext_mod"
+ext_mod = "backend.ext_mod"
 
 [build-system]
 requires = ["setuptools >= 80", "setuptools-scm >= 8"]

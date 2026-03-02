@@ -9,7 +9,7 @@ use pytauri::standalone::{
 };
 use tauri::utils::platform::resource_dir;
 
-use example_pytauri_app_react_lib::{ext_mod, tauri_generate_context};
+use backend_lib::{ext_mod, tauri_generate_context};
 
 fn main() -> Result<Infallible, Box<dyn Error>> {
     let py_env = if cfg!(dev) {
@@ -39,7 +39,7 @@ fn main() -> Result<Infallible, Box<dyn Error>> {
 
     // 👉 Equivalent to `python -m example_pytauri_app_react`,
     // i.e, run the `src-tauri/python/example_pytauri_app_react/__main__.py`
-    let py_script = PythonScript::Module("example_pytauri_app_react".into());
+    let py_script = PythonScript::Module("python_backend".into());
 
     // 👉 `ext_mod` is your extension module, we export it from memory,
     // so you don't need to compile it into a binary file (.pyd/.so).

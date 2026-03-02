@@ -3,7 +3,7 @@
 import sys
 from multiprocessing import freeze_support
 
-from example_pytauri_app_react import main
+from python_backend import main
 
 # - If you don't use `multiprocessing`, you can remove this line.
 # - If you do use `multiprocessing` but without this line,
