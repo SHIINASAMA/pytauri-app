@@ -4,7 +4,7 @@ set -e
 
 cd "$(dirname "$0")/../.."
 
-PROJECT_NAME="example-pytauri-app-react"
+PROJECT_NAME="pytauri-app"
 PYLIB_DIR="$(realpath src-tauri/pyembed/python/lib)"
 
 export PYTAURI_STANDALONE="1"

@@ -124,7 +124,7 @@ jobs:
         shell: bash
         env:
           # `example-pytauri-app-react` is your app `productName` in `tauri.conf.json`
-          PRODUCT_NAME: "example-pytauri-app-react"
+          PRODUCT_NAME: "pytauri-app"
         run: |
           PYO3_PYTHON=$(realpath ./src-tauri/pyembed/python/bin/python3)
           RUSTFLAGS=" \
